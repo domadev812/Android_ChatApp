@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/profile1"
+            tools:srcCompat="@drawable/profile1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:id="@+id/layout_rightmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_toStartOf="@+id/imgUser"
+            android:background="@drawable/ic_bubble_right">
+
+            <app.com.chatapp.view.CustomTextView
+                android:id="@+id/chat_item_msg_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingEnd="13dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="13dp"
+                android:paddingStart="8dp"
+                android:paddingTop="3dp"
+                android:text="OK               "
+                android:textColor="#212121"
+                android:textSize="@dimen/chat_item_text" />
+
+            <TextView
+                android:id="@+id/chat_item_time_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_item_msg_right"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="1dp"
+                android:paddingRight="5dp"
+                android:text="2017.7.22"
+                android:textColor="#fafafa"
+                android:layout_toLeftOf="@+id/imgSend"
+                android:layout_toStartOf="@+id/imgSend" />
+
+            <ImageView
+                android:id="@+id/imgSend"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/chat_item_msg_right"
+                android:layout_marginRight="17dp"
+                android:layout_alignEnd="@+id/chat_item_msg_right"
+                app:srcCompat="@drawable/check"
+                tools:srcCompat="@drawable/check" />
+
+            <ImageView
+                android:id="@+id/imgRead"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/chat_item_msg_right"
+                android:layout_below="@+id/chat_item_msg_right"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/check"
+                tools:srcCompat="@drawable/check" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/imgContact"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/profile" />
+            <TextView
+                android:id="@+id/txtState"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/state_online"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_leftmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="100dp"
+            android:layout_toEndOf="@+id/layoutPhoto"
+            android:background="@drawable/ic_bubble_left">
+
+            <app.com.chatapp.view.CustomTextView
+                android:id="@+id/chat_item_msg_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingEnd="13dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="13dp"
+                android:paddingStart="8dp"
+                android:paddingTop="3dp"
+                android:text="This is simple test"
+                android:textColor="#212121"
+                android:textSize="@dimen/chat_item_text" />
+
+            <TextView
+                android:id="@+id/chat_item_time_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/chat_item_msg_left"
+                android:layout_alignStart="@+id/chat_item_msg_left"
+                android:layout_below="@+id/chat_item_msg_left"
+                android:layout_marginBottom="10dp"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:textColor="#4a4a4a"
+                android:text="2017.7.22" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

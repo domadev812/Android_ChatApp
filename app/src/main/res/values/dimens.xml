@@ -1,0 +1,48 @@
+<resources>
+
+    <dimen name="layout_padding">20dp</dimen>
+
+    <dimen name="edit_text_size">20sp</dimen>
+    <dimen name="edit_text_padding">10dp</dimen>
+    <dimen name="text_button_size">20sp</dimen>
+    <dimen name="text_button_padding">12dp</dimen>
+
+    <!-- Conversation List -->
+    <dimen name="conver_search_text">14sp</dimen>
+    <dimen name="conver_item_name">18sp</dimen>
+    <dimen name="conver_item_time">12sp</dimen>
+    <dimen name="conver_item_message">16sp</dimen>
+
+    <!-- Contact -->
+    <dimen name="contact_search_message">16sp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_title">18sp</dimen>
+    <dimen name="toolbar_text_btn">16sp</dimen>
+
+    <!-- Details -->
+    <dimen name="detail_lbl_opt">17sp</dimen>
+    <dimen name="detail_txt_name">24sp</dimen>
+    <dimen name="detail_txt_phone">17sp</dimen>
+    <dimen name="detail_lbl_business">13sp</dimen>
+
+    <!-- Chat -->
+    <dimen name="edt_chat">15sp</dimen>
+    <dimen name="chat_item_time">12sp</dimen>
+    <dimen name="chat_item_text">17sp</dimen>
+    <dimen name="template_item_spacing">13dp</dimen>
+
+    <!-- contact dialog -->
+    <dimen name="dialog_spacing">15dp</dimen>
+    <dimen name="dialog_text_size">18sp</dimen>
+    <dimen name="dialog_item_padding">12dp</dimen>
+
+    <dimen name="tab_width">200dp</dimen>
+    <dimen name="tab_height">40dp</dimen>
+
+    <dimen name="avatar_round_border_size">2dp</dimen>
+    <dimen name="avatar_square_border_size">2dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

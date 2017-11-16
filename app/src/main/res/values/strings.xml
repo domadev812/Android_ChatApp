@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Login -->
+    <string name="email">Email</string>
+    <string name="log_in">Log In</string>
+    <string name="password">Password</string>
+    <string name="login_fail">Invalid username or password</string>
+    <string name="try_again">Please try again.</string>
+
+    <!-- Home -->
+    <string name="search">Search</string>
+    <string-array name="home_title">
+
+        <item>Messages</item>
+        <item>Contacts</item>
+    </string-array>
+
+    <!-- Contacts -->
+    <string name="contact_message">Search by Name, Phone Number or Business Name</string>
+
+    <!-- Add contact -->
+    <string name="last">Last</string>
+    <string name="first">First</string>
+    <string name="new_contact">New Contact</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="business_name">Business Name</string>
+
+    <!-- Detail -->
+    <string name="phone">Phone</string>
+    <string name="detail">Details</string>
+    <string name="opt_out">Opt out</string>
+    <string name="business">Business</string>
+    <string name="contact_created">Contact created</string>
+    <string name="contact_updated">Contact updated</string>
+    <string name="invalid_response">Invalid response</string>
+
+    <!-- Chat -->
+    <string name="new_message">New Message</string>
+    <string name="message_template">Message Templates</string>
+
+    <!-- Dialog -->
+    <string name="import_contact">Import contact</string>
+    <string name="add_new_contact">Add new contact</string>
+    <string name="no_phone_number">This contact has no phone numbers.</string>
+    <string name="number_must_be_10">Phone number must be 10 digits.</string>
+    <string name="contact_exists">Contact already exists.</string>
+    <string name="contact_imported">Contact Imported</string>
+    <string name="user_which_number">Use which number?</string>
+
+    <string name="contact_detail">For contact with us use the following details</string>
+    <string name="contact_copyright">Copyright@2015 - 2017 Space Hotel Nederland and Belgie.</string>
+    <string name="contact_copyright_name">Alle rechten voorbehouden</string>
+</resources>

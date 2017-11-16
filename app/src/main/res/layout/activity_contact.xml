@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:id="@+id/layout_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/leftBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                app:srcCompat="@drawable/left_back" />
+
+            <TextView
+                android:id="@+id/txtNabName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/leftBack"
+                android:gravity="center_horizontal"
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionbar">
+
+        <TextView
+            android:id="@+id/txtNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtNameLabel"
+            android:layout_alignStart="@+id/txtNameLabel"
+            android:layout_below="@+id/txtNameLabel"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edt_contact"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/txtEmailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtNameLabel"
+            android:layout_alignStart="@+id/txtNameLabel"
+            android:layout_below="@+id/txtName"
+            android:padding="5dp"
+            android:text="E-mail"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtEmailLabel"
+            android:layout_alignStart="@+id/txtEmailLabel"
+            android:layout_below="@+id/txtEmailLabel"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edt_contact"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtMessageabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtEmail"
+            android:layout_alignStart="@+id/txtEmail"
+            android:layout_below="@+id/txtEmail"
+            android:padding="5dp"
+            android:text="Message"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignEnd="@+id/txtMessageabel"
+            android:layout_alignStart="@+id/txtMessageabel"
+            android:layout_below="@+id/txtMessageabel"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edt_contact"
+            android:gravity="top|left"
+            android:padding="10dp"
+            android:scrollHorizontally="false"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="" />
+
+        <app.com.chatapp.view.CustomClickTextView
+            android:id="@+id/login_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/txtMessage"
+            android:layout_below="@+id/txtMessage"
+            android:background="@drawable/btn_profile"
+            android:enabled="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/text_button_padding"
+            android:paddingRight="@dimen/text_button_padding"
+            android:text="Send message"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_button_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
